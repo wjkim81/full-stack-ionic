@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 import { Dish } from '../../shared/dish';
 import { DishProvider } from '../../providers/dish/dish';
@@ -28,7 +28,8 @@ export class MenuPage implements OnInit {
     public navParams: NavParams,
     private dishservice: DishProvider,
     private favoriteservice: FavoriteProvider,
-    @Inject('BaseURL') private BaseURL) {
+    @Inject('BaseURL') private BaseURL,
+    private toastCtrl: ToastController) {
   }
 
   ngOnInit() {
