@@ -74,7 +74,5 @@ export class FavoritesPage implements OnInit {
     alert.present();
 
     item.close();
-
   }
-
 }
